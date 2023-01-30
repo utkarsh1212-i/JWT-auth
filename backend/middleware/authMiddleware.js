@@ -1,4 +1,4 @@
-const jwt = require("jwt");
+const jwt = require("jsonwebtoken");
 const asyncHandler = require("express-async-handler");
 const User = require("../model/userModel");
 
@@ -30,4 +30,4 @@ if(!token){
   }
 });
 
-module.exports = { protext };
+module.exports = { protect };
